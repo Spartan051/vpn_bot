@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id       Int       @id @default(autoincrement())
+  user_id  Int
+  services Service[]
+}
+
+model Service {
+  id         Int       @id @default(autoincrement())
+  user       User?     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  user_id    Int?
+  key        String
+  time       Int
+  start_time DateTime?
+  end_time   DateTime?
+}
