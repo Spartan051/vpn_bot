@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/social_service.iml" filepath="$PROJECT_DIR$/.idea/social_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vpn-bot.iml" filepath="$PROJECT_DIR$/.idea/vpn-bot.iml" />
     </modules>
   </component>
 </project>

@@ -23,6 +23,8 @@ export class TelegramBot{
 
          this.start()
 
+
+
         // launch bot
         await this.bot.launch()
 
